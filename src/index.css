@@ -8,15 +8,15 @@ beige: #eff6e0ff; */
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
   }
 
-main{
+.all-articles{
     display:flex;
     flex-direction: column;
     padding: 2rem;
-    color: white;
-}
-
-.all-articles{
     gap: 1rem;
+}
+.all-articles p{
+    color: white;
+    text-decoration:none ;
 }
 
 .all-articles div{
@@ -24,5 +24,30 @@ main{
     border: 1px solid;
     border-radius: 1rem;
     background-color: #124559ff;
+    text-decoration: none;
 }
 
+.article-page{
+    display:flex;
+    flex-direction: column;
+    padding:2rem;
+}
+ 
+.topic-header{
+    background-color: #598392ff;
+    color: white;
+    padding:2rem;
+}
+
+.article-page img{
+    max-width: 60rem;
+    padding:2rem;
+}
+
+.article-page p{
+    margin: 0;
+}
+
+.article-page body{
+    margin-bottom: 2rem;
+}
