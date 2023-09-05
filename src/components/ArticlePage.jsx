@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { getArticleById } from "../../api";
 import { useState, useEffect } from "react";
 import Comments from "./Comments";
+import Votes from "./Votes";
 
 export default function ArticlePage() {
   const { article_id } = useParams();
@@ -30,8 +31,9 @@ export default function ArticlePage() {
       <p>{article.created_at}</p></div>
       <img src={article.article_img_url} />
       <p className="article-body">{article.body}</p>
-      <p>Votes: {article.votes}</p>
+      <Votes currVotes={article.votes} article_id={article_id} />
       <p>Comments: {article.comment_count}</p>
+      <p>Votes: {article.votes} </p>
       <h4>Comments</h4>
       <Comments article_id={article_id} />  
     </main>

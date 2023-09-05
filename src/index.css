@@ -92,10 +92,24 @@ border-width: .5rem;
  font-weight: bold;
 
 }
-.comment-body{
-
-}
 
 .date{
     color: grey;
+}
+
+.like-dislike{
+    display: flex;
+    justify-content: center;
+    width: 7rem;
+    font-size: 1rem;
+    margin: .5rem;
+    border-radius: 1rem;
+    padding:.5rem;
+}
+
+div .buttons{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    
 }
