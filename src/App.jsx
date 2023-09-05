@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import HomePage from "../components/HomePage"
-import AllArticlesPage from "../components/AllArticlesPage";
-import ArticlePage from "../components/ArticlePage";
+import ArticlePage  from "./components/ArticlePage";
+import AllArticlesPage from "./components/AllArticlesPage"
+import HomePage from "./components/HomePage"
   
 export default function App() {
   const [articles, setArticles] = useState([]);
