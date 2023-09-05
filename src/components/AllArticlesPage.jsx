@@ -1,7 +1,6 @@
 import { useEffect } from "react";
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import { getAllArticles } from "../api";
+import { getAllArticles } from "../../api";
 
 export default function AllArticlesPage({ articles, setArticles }) {
   useEffect(() => {

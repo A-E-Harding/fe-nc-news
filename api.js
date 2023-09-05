@@ -9,3 +9,7 @@ export function getAllArticles() {
 export function getArticleById(article_id) {
     return axios.get(baseURL+`/articles/${article_id}`)
 }
+
+export function getCommentsByArticleId(article_id) {
+    return axios.get(baseURL+`/articles/${article_id}/comments`)
+}
