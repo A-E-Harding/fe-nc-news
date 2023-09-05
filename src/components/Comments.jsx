@@ -14,6 +14,10 @@ export default function Comments({article_id}) {
       });
   }, [article_id]);
 
+  if (comments.length === 0) {
+  return <p>Be the first to write a comment...</p>
+}
+  
   return (
     <ul>
       {comments.map((comment) => {
