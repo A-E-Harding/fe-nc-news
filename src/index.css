@@ -7,7 +7,6 @@ beige: #eff6e0ff; */
 * {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
-
   }
 
   li{
@@ -63,7 +62,11 @@ beige: #eff6e0ff; */
 .article-body{
     padding-bottom: 2rem;
 }
-.article-page div{
+
+.buttons{
+    background-color: white;
+}
+.details{
     background-color: rgb(140, 138, 138);
     display: flex;
     flex-direction: column;
@@ -98,18 +101,44 @@ border-width: .5rem;
 }
 
 .like-dislike{
-    display: flex;
-    justify-content: center;
     width: 7rem;
     font-size: 1rem;
     margin: .5rem;
     border-radius: 1rem;
     padding:.5rem;
+
 }
 
-div .buttons{
+.buttons{
     display: flex;
     flex-direction: row;
-    margin-bottom: 1rem;
-    
+    margin-bottom: 4rem;
+}
+
+.buttons p{
+   height:1rem;
+   margin-top: 1.5rem;
+   
+}
+
+form{
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+input{
+    min-height: 3rem;
+    max-width: 20rem;
+    outline: 1px solid grey;
+    margin:1rem;
+}
+
+.submit{
+    width: 7rem;
+    font-size: 1rem;
+    margin: .5rem;
+    border-radius: 1rem;
+    padding:.5rem;
 }

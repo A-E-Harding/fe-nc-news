@@ -15,9 +15,13 @@ export function getCommentsByArticleId(article_id) {
 }
 
 export function updateVotes(article_id) {
-  return axios.patch(baseURL + `/articles/${article_id}`, { inc_votes: 1 });
+  return axios.patch(baseURL + `articles/${article_id}`, { inc_votes: 1 });
 }
 
 export function decreaseVotes(article_id) {
     return axios.patch(baseURL + `/articles/${article_id}`, { inc_votes: -1 });
   }
+
+export function addComment(comment, article_id) {
+     return axios.post(baseURL+`/articles/${article_id}/comments`, {username: "grumpy19", body:comment})
+ }

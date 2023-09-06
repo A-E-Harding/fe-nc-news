@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Comments from "./Comments";
 import Votes from "./Votes";
 
+
 export default function ArticlePage() {
   const { article_id } = useParams();
   const [article, setArticle] = useState({});
@@ -27,15 +28,15 @@ export default function ArticlePage() {
     <main className="article-page">
       <h2 className="topic-header">{article.topic}</h2>
       <h3 className="article-title">{article.title}</h3>
-      <div><p>{article.author}</p>
+      <div className="details"><p>{article.author}</p>
       <p>{article.created_at}</p></div>
       <img src={article.article_img_url} />
       <p className="article-body">{article.body}</p>
       <Votes currVotes={article.votes} article_id={article_id} />
-      <p>Comments: {article.comment_count}</p>
-      <p>Votes: {article.votes} </p>
       <h4>Comments</h4>
+     
       <Comments article_id={article_id} />  
+      <p>{article.comment_count} comments</p>
     </main>
   );
 }
