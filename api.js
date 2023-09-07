@@ -1,7 +1,8 @@
 import axios from "axios";
 
-const baseURL ="http://localhost:9090/api"
-  // "https://nc-news-0876.onrender.com/api";
+const baseURL ="https://nc-news-0876.onrender.com/api"
+  //"http://localhost:9090/api"
+
 
 export function getAllArticles() {
   return axios.get(baseURL + "/articles");
@@ -31,6 +32,6 @@ export function getAllTopics() {
   return axios.get(baseURL+"/topics")
 }
 
-export function getArticlesByTopic(searchParam) {
-  return axios.get(baseURL+`/articles${searchParam}`)
+export function getArticlesByTopic(topicName) {
+  return axios.get(baseURL+`/articles?topic=${topicName}`)
 }
