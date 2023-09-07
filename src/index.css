@@ -13,6 +13,20 @@ beige: #eff6e0ff; */
     list-style:none;
 }
 
+.home-link{
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    margin:2rem;
+    color: white;
+    padding: 2rem;
+    border: 1px solid;
+    border-radius: 1rem;
+    background-color: #124559ff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 .all-articles{
     display:flex;
     flex-direction: column;
