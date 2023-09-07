@@ -3,14 +3,10 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { getAllTopics } from "../../api";
 
-export default function HomePage() {
-  const [topics, setTopics] = useState([]);
+export default function HomePage({topics, setTopics}) {
+ 
 
-  useEffect(() => {
-    getAllTopics().then((response) => {
-      setTopics(response.data);
-    });
-  }, [topics]);
+
   return (
     <main>
       <Link className="home-link" to="/all-articles">View all Articles</Link>

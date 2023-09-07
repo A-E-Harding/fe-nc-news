@@ -13,27 +13,11 @@ export default function CommentAdder({ article_id, setComments, comments }) {
         setComment("");
       })
       .catch((err) => {
+        console.log(err)
         setError(err.response.data.msg);
       });
   };
 
-  if (error) {
-    return (
-      <form>
-        <label>Add a new comment</label>
-        <input
-          value={comment}
-          onChange={(e) => {
-            {
-              setComment(e.target.value);
-            }
-          }}
-        />
-        <button className='submit'onClick={handleSubmit}>Submit</button>
-        <p>Server error</p>
-      </form>
-    );
-  }
 
   return (
     <form>
@@ -47,6 +31,7 @@ export default function CommentAdder({ article_id, setComments, comments }) {
         }}
       />
       <button className='submit' onClick={handleSubmit}>Submit</button>
+      {error ? <p>Server error</p> : null }
     </form>
   );
 }

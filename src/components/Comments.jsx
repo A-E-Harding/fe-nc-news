@@ -11,7 +11,6 @@ export default function Comments({ article_id }) {
       .then((response) => {
         setIsLoading(false)
         setComments(response.data);    
-        console.log(response.data);
       })
       .catch((err) => {
         console.log(err);
@@ -23,7 +22,6 @@ export default function Comments({ article_id }) {
 }
 
   if (comments.msg) {
-  console.log('in if')
     return (
       <>
         <p>Be the first to write a comment...</p>
@@ -33,7 +31,6 @@ export default function Comments({ article_id }) {
   }
 
   else {
-    console.log('in else')
     return (
       <>
         <CommentAdder article_id={article_id} setComments={setComments} comments={comments} />

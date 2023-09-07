@@ -8,6 +8,7 @@ export default function Votes({ currVotes, article_id }) {
   const handleLikes = () => {
     setVotes((votes) => votes + 1);
     updateVotes(article_id).catch((err) => {
+      console.log(err, 'err')
       setVotes((votes) => votes - 1);
       setError({ err });
     });
@@ -20,16 +21,6 @@ export default function Votes({ currVotes, article_id }) {
     });
   };
 
-  if (error) {
-    return (
-      <div className="buttons">
-        <p>server error</p>
-        <button className="like-dislike" onClick={handleLikes}>Like 👍</button>
-        <button className="like-dislike" onClick={handleDislikes}>Dislike 👎</button>
-        <p>Votes: {votes} </p>
-      </div>
-    );
-  }
 
   return (
     <div className="buttons">
@@ -40,6 +31,7 @@ export default function Votes({ currVotes, article_id }) {
       <button className="like-dislike" onClick={handleDislikes}>
         👎
       </button>
+      {error ? <p>Server error</p> : null }
     </div>
   );
 }
