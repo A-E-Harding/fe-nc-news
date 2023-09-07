@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const baseURL = "https://nc-news-0876.onrender.com/api";
+const baseURL ="http://localhost:9090/api"
+  // "https://nc-news-0876.onrender.com/api";
 
 export function getAllArticles() {
   return axios.get(baseURL + "/articles");
