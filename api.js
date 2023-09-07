@@ -24,4 +24,12 @@ export function decreaseVotes(article_id) {
 
 export function addComment(comment, article_id) {
      return axios.post(baseURL+`/articles/${article_id}/comments`, {username: "grumpy19", body:comment})
- }
+}
+ 
+export function getAllTopics() {
+  return axios.get(baseURL+"/topics")
+}
+
+export function getArticlesByTopic(searchParam) {
+  return axios.get(baseURL+`/articles${searchParam}`)
+}
