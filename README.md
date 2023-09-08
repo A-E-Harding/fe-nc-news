@@ -33,3 +33,8 @@ The dependences required by this repo can be installed using the below command l
 ```console
 npm install
 ```
+
+to launch the local version, in terminal run
+```console
+npm run dev
+```
