@@ -47,7 +47,7 @@ h1 {
   color: white;
 }
 
-.article-card{
+.article-card {
   display: flex;
   flex-direction: column;
   background-color: #124559ff;
@@ -134,6 +134,7 @@ ul {
   margin: 0.5rem;
   border-radius: 1rem;
   padding: 0.5rem;
+  border: none;
 }
 
 .buttons {
@@ -166,6 +167,7 @@ input {
   margin: 0.5rem;
   border-radius: 1rem;
   padding: 0.5rem;
+  border: none;
 }
 
 .nav-bar {
@@ -191,27 +193,25 @@ input {
   padding: 16px;
   font-size: 16px;
   border-radius: 1rem;
-  border:none;
-  
+  border: none;
 }
 .dropdown {
   position: relative;
   display: inline-block;
   text-align: right;
- 
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  right:0;
+  right: 0;
 }
 
 .dropdown-content button {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  border:none;
+  border: none;
   border-radius: 1rem;
   margin: 0.25rem;
   width: 100%;
@@ -228,19 +228,37 @@ input {
 .dropdown:hover .dropbtn {
   background-color: #ddd;
 }
-.asc-desc{
+.asc-desc {
   text-align: right;
 }
 
-.asc-desc button{
+.asc-desc button {
   padding: 10px;
   font-size: 16px;
   border-radius: 1rem;
-  border:none;
+  border: none;
 }
-.asc:hover  {
+.asc:hover {
   background-color: #ddd;
 }
-.desc:hover  {
+.desc:hover {
   background-color: #ddd;
+}
+
+.delete-button {
+  height:1rem;
+padding:.75rem;
+padding-bottom: 1.25rem;
+margin:1rem;
+  background-color: #598392ff;;
+  color: white;
+  border-radius: 1rem;
+  border: none;
+}
+
+.comment-section {
+  
+  display: flex;
+  flex-direction: row;
+ align-items:center;
 }

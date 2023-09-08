@@ -46,14 +46,15 @@ export default function Comments({ article_id }) {
         <CommentAdder article_id={article_id} setComments={setComments} comments={comments} />
         <ul>
           {comments.map((comment) => {
-            return (
+            return (<div className="comment-section">
               <li key={comment.comment_id} className="comments">
                 <p className="author">{comment.author}</p>
                 <p className="date">{comment.created_at}</p>
                 <p className="comment-body">{comment.body}</p>
                 <p>Votes: {comment.votes}</p>
-                <button onClick={() => handleClick(comment.comment_id)}>Delete</button>
-              </li>
+                </li>
+                <button className='delete-button'onClick={() => handleClick(comment.comment_id)}>Delete</button>
+                </div>
             );
           })}
         </ul>
