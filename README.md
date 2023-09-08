@@ -1,7 +1,7 @@
 # Frontend project - NC News React app
 
 ### Project Link
-[]()
+[nc-news](https://nc-news-alice-harding.netlify.app)
 
 ## Introduction
 
