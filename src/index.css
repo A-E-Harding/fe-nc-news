@@ -47,7 +47,15 @@ h1 {
   color: white;
 }
 
-.all-articles div {
+.article-card{
+  display: flex;
+  flex-direction: column;
+  background-color: #124559ff;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.article {
   padding: 1rem;
   border: 1px solid;
   border-radius: 1rem;
@@ -61,6 +69,7 @@ h1 {
 }
 
 .topic-header {
+  flex: 1;
   background-color: #598392ff;
   color: white;
   padding: 1.5rem;
@@ -88,7 +97,7 @@ h1 {
   background-color: white;
 }
 .details {
-  background-color: rgb(140, 138, 138);
+  background-color: grey;
   display: flex;
   flex-direction: column;
   width: 15rem;
@@ -176,4 +185,56 @@ input {
   padding-right: 2rem;
   border-radius: 1rem;
   color: white;
+}
+
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 1rem;
+  border:none;
+  
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: right;
+ 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right:0;
+}
+
+.dropdown-content button {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border:none;
+  border-radius: 1rem;
+  margin: 0.25rem;
+  width: 100%;
+}
+
+.dropdown-content button:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+.asc-desc{
+  text-align: right;
+}
+
+.asc-desc button{
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 1rem;
+  border:none;
 }
