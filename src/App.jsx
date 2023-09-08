@@ -15,7 +15,7 @@ export default function App() {
     getAllTopics().then((response) => {
       setTopics(response.data);
     });
-  }, [topics]);
+  }, []);
   return (
     <>
       <div>
