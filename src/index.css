@@ -238,3 +238,9 @@ input {
   border-radius: 1rem;
   border:none;
 }
+.asc:hover  {
+  background-color: #ddd;
+}
+.desc:hover  {
+  background-color: #ddd;
+}

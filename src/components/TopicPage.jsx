@@ -28,8 +28,8 @@ export default function TopicPage({ articles, setArticles }) {
     <main className="all-articles">
       <h2 className="topic-header">{topicName}</h2>
       <div className="asc-desc">
-        <button onClick={() => handleOrderClick("asc")}>ascending</button>
-        <button onClick={() => handleOrderClick("desc")}>descending</button>
+        <button className='asc' onClick={() => handleOrderClick("asc")}>ascending</button>
+        <button className='desc' onClick={() => handleOrderClick("desc")}>descending</button>
       </div>
       <div className="dropdown">
         <button className="dropbtn">sort by...</button>
