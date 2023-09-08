@@ -41,11 +41,14 @@ h1 {
   flex-direction: column;
   padding: 2rem;
   gap: 1rem;
+  
 }
 
 .all-articles p {
-  color: white;
+color: white;
+
 }
+
 
 .article-card {
   display: flex;

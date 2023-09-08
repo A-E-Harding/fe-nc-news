@@ -10,7 +10,7 @@ export default function AllArticlesPage({ articles, setArticles }) {
     <main className="all-articles">
       {articles.map((article) => {
         return (
-          <div key={article.article_id}>
+          <div className='article-card' key={article.article_id}>
             <Link to={`/articles/${article.article_id}`}>
               <p >{article.title}</p>
               <p>{article.author}</p>

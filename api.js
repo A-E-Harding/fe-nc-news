@@ -40,6 +40,5 @@ export function getArticlesByTopic(topicName, sortBy, orderBy) {
 }
 
 export function deleteCommentbyId(id) {
-  console.log(id)
   return axios.delete(baseURL+`/comments/${id}`)
 }
