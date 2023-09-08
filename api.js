@@ -38,3 +38,8 @@ export function getAllTopics() {
 export function getArticlesByTopic(topicName, sortBy, orderBy) {
   return axios.get(baseURL + `/articles?topic=${topicName}&sort_by=${sortBy}&order=${orderBy}`);
 }
+
+export function deleteCommentbyId(id) {
+  console.log(id)
+  return axios.delete(baseURL+`/comments/${id}`)
+}
