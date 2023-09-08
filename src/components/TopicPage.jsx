@@ -20,10 +20,11 @@ export default function TopicPage({ articles, setArticles }) {
     setOrderedBy(orderBy);
   };
 
-  useEffect(()=>{getArticlesByTopic(topicName, sortedBy, orderedBy).then((response) => {
+  useEffect(() => {
+    getArticlesByTopic(topicName, sortedBy, orderedBy).then((response) => {
     setArticles(response.data);
-  });},[topicName])
-  
+  });
+},[topicName, sortedBy, orderedBy])
 
   return (
     <main className="all-articles">
